@@ -32,3 +32,15 @@ a {
     margin: auto;
     text-align: center;
 }
+.main {
+    width: 100%;
+    max-width: 950px;
+    margin: auto;
+    text-align: center;
+}
+.img {
+    width: 100%;
+    max-width: 950px;
+    margin: auto;
+    text-align: center;
+}
