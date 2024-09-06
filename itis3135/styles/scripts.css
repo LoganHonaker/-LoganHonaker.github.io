@@ -10,7 +10,7 @@ header, body {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-index.html {
-    background-color: grey;
-    color: white;
+img {
+    width: 200px;
+    height: 200px;
 }
