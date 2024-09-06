@@ -6,3 +6,7 @@
     background-color: gray;
     color: white;
 }
+header, body {
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
