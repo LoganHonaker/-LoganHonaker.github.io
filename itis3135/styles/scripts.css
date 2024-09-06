@@ -15,7 +15,7 @@ img {
     height: 200px;
 }
 #about {
-    float: left;
-    position: relative;
-    left: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
 }
