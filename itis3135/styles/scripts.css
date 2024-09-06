@@ -14,3 +14,8 @@ img {
     width: 200px;
     height: 200px;
 }
+#about {
+    float: left;
+    position: relative;
+    left: 50%;
+}
