@@ -7,8 +7,6 @@ header {
     font-size: 25px;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: gray;
-    color: white;
 }
 header, body {
     text-align: center;
