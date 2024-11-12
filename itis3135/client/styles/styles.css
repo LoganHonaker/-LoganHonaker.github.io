@@ -5,8 +5,8 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #394053;
+    color: #e8f1f2;
     padding: 1em;
     text-align: center;
 }
@@ -34,4 +34,28 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+a { 
+    text-decoration: none; 
+    color: #e8f1f2;
+}
+a:visited { 
+    text-decoration: none; 
+    color: #e8f1f2;
+}
+a:hover { 
+    text-decoration: none; 
+    color: #e8f1f2;
+}
+a:focus { 
+    text-decoration: none; 
+    color: #e8f1f2;
+}
+a:hover, a:active { 
+    text-decoration: none; 
+    color: #e8f1f2;
+}
+#about {
+    text-align: left;
+    padding-left: 15px;
 }
