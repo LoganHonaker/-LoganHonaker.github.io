@@ -11,10 +11,7 @@
     <header>
         <h1>Logan Honaker - ITIS 3135</h1>
         <nav>
-            <ul>
-                <a href="index.html">Home</a>
-                <a href="firstscripts.html">First Scripts</a>
-            </ul>
+            <div data-include="components/header.html"></div>
         </nav>
     </header>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
@@ -49,14 +46,17 @@
         <button onclick="provideInsult()">Provide Insult</button>
 
         <footer>
+            <div data-include="components/footer.html"></div>
             <a href="#" id="validationLink1">Validation Link 1</a>
             <a href="#" id="validationLink2">Validation Link 2</a>
         </footer>
     </main>
+    <script src="scripts/include.js"></script>
     <script>
         const currentPageURL = window.location.href;
         document.getElementById("validationLink1").href += currentPageURL;
         document.getElementById("validationLink2").href += currentPageURL;
     </script>
+
 </body>
 </html>
