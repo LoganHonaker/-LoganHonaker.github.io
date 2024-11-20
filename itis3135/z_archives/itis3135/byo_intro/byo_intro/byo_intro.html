@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BYO Intro</title>
+    <link rel="stylesheet" href="styles/scripts.css" type="text/css">
+    <h1>Introduction</h1>
+</head>
+<header>
+    <a href="https://loganhonaker.github.io/itis3135/heron/about.html">Luxurious Heron ||</a>
+    <a href="https://loganhonaker.github.io/itis3135/stuff/CR@P py.htm">CR@P py ||</a>
+    <a href="https://loganhonaker.github.io/itis3135/tables.html/index.html">Tables ||</a>
+    <a href="https://loganhonaker.github.io/itis3135/client/client.html">Client ||</a>
+    <a href="https://webpages.charlotte.edu/lhonake1/itis3135/byo_intro/byo_intro.html">BYO Intro</a>
+</header>
+<script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+<body>
+    <main>
+        <h2>BYO Intro</h2>
+        <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+        
+        <form id="intro-form" enctype="multipart/form-data">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            
+            <label for="mascot">Mascot:</label>
+            <input type="text" id="mascot" name="mascot" required><br>
+            
+            <label for="image">Image:</label>
+            <input type="file" id="image" name="image" accept="image/png, image/jpeg" required><br>
+            
+            <label for="image-caption">Image Caption:</label>
+            <input type="text" id="image-caption" name="image-caption" required><br>
+            
+            <label for="personal-background">Personal Background:</label>
+            <input type="text" id="personal-background" name="personal-background" required><br>
+            
+            <label for="professional-background">Professional Background:</label>
+            <input type="text" id="professional-background" name="professional-background" required><br>
+            
+            <label for="academic-background">Academic Background:</label>
+            <input type="text" id="academic-background" name="academic-background" required><br>
+            
+            <label for="web-development-background">Background in Web Development:</label>
+            <input type="text" id="web-development-background" name="web-development-background" required><br>
+            
+            <label for="computer-platform">Primary Computer Platform:</label>
+            <input type="text" id="computer-platform" name="computer-platform" required><br>
+            
+            <div id="courses-section">
+                <label for="courses">Courses Currently Taking:</label>
+                <div id="course-container"></div>
+                <button type="button" id="add-course-button">Add Course</button>
+            </div>
+            
+            <label for="funny-thing">Funny thing?</label>
+            <input type="text" id="funny-thing" name="funny-thing"><br>
+            
+            <label for="anything-else">Anything else?</label>
+            <input type="text" id="anything-else" name="anything-else"><br>
+            
+            <label for="agreement">
+                <input type="checkbox" id="agreement" name="agreement" required>
+                I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.
+            </label><br>
+            
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset" onclick="resetForm()">
+        </form>
+        
+        <div id="submitted-data" style="display:none;"></div>
+    </main>
+    <script src="scripts/survey.js"></script>
+</body>
+</html>

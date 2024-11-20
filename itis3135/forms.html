@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Forms</title>
+        <link rel="stylesheet" href="styles/scripts.css" type="text/css">
+        <h1>ITIS3135 - Logan Honaker</h1>
+    </head>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <body>
+        <main>
+            <h2>Forms</h2>
+
+            <section id="contact-form">
+                <h3>Contact Form</h3>
+                <form action="#" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="yourname@example.com" required>
+
+                    <fieldset>
+                        <legend>How did you hear about us?</legend>
+                        <label for="friend">
+                            <input type="checkbox" id="friend" name="referral" value="Friend">
+                            A Friend
+                        </label>
+                        <label for="advertisement">
+                            <input type="checkbox" id="advertisement" name="referral" value="Advertisement">
+                            Advertisement
+                        </label>
+                        <label for="social-media">
+                            <input type="checkbox" id="social-media" name="referral" value="Social Media">
+                            Social Media
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Choose your subscription plan:</legend>
+                        <label for="basic">
+                            <input type="radio" id="basic" name="plan" value="Basic">
+                            Basic Plan
+                        </label>
+                        <label for="premium">
+                            <input type="radio" id="premium" name="plan" value="Premium">
+                            Premium Plan
+                        </label>
+                    </fieldset>
+
+                    <label for="feedback">Your Feedback:</label>
+                    <textarea id="feedback" name="feedback" rows="4" placeholder="Your thoughts..." required></textarea>
+
+                    <label for="contact-method">Preferred Contact Method:</label>
+                    <select id="contact-method" name="contact-method">
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                    </select>
+
+                    <div>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <div data-include="components/footer.html"></div>
+            <p><a href="https://webpages.charlotte.edu/lhonake1/" rel="noopener noreferrer">University Webpage Home</a></p>
+            <p>Page Built by: <a href="https://webpages.charlotte.edu/lhonake1/itis3135/hedging/hedging.html" target="_blank">Hons' Hedging ©2024</a></p>
+        </footer>
+
+        <script src="scripts/include.js"></script>
+    </body>
+</html>

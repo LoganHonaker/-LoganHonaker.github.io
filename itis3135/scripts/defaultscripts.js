@@ -1,65 +1,63 @@
 function displayCurrentDateTime() {
     const currentDate = new Date();
-    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+    const options = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit'
+    };
     const formattedDate = currentDate.toLocaleString('en-US', options);
-    document.getElementById('currentDateTime').innerText = `Today is ${formattedDate}`;
+    document.getElementById('current-date-time').innerText = `Today is ${formattedDate}`;
 }
 
-document.getElementById('userForm').addEventListener('submit', function(event) {
+document.getElementById('user-form').addEventListener('submit', function(event) {
     event.preventDefault();
-    const userName = document.getElementById('userName').value;
-    const userMood = document.getElementById('userMood').value;
 
-    const greetingMessage = `${userName}, welcome to {Your Company Name}! We're glad you are feeling ${userMood}!`;
-    document.getElementById('greetingMessage').innerText = greetingMessage;
+    const userName = document.getElementById('user-name').value;
+    const userMood = document.getElementById('user-mood').value;
+
+    const greetingMessage = `${userName}, welcome to Luxurious Heron! We hear you are feeling ${userMood}!`;
+    document.getElementById('greeting-message').innerText = greetingMessage;
 });
 
-function showPolygon() {
-    let numberOfSides = Math.abs(Math.round(document.getElementById('favoriteNumber').value));
-    let polygonName;
+function showBird() {
+    let birdNumber = Math.abs(Math.round(document.getElementById('favorite-number').value));
+    let birdName;
 
-    switch (numberOfSides) {
-        case 0: polygonName = 'Monogon'; break;
-        case 1: polygonName = 'Monogon'; break;
-        case 2: polygonName = 'Digon (or Bigon)'; break;
-        case 3: polygonName = 'Triangle'; break;
-        case 4: polygonName = 'Quadrilateral'; break;
-        case 5: polygonName = 'Pentagon'; break;
-        case 6: polygonName = 'Hexagon'; break;
-        case 7: polygonName = 'Heptagon'; break;
-        case 8: polygonName = 'Octagon'; break;
-        case 9: polygonName = 'Nonagon'; break;
-        case 10: polygonName = 'Decagon'; break;
-        default: polygonName = 'Polygon with ' + numberOfSides + ' sides'; break;
+    switch (birdNumber) {
+        case 1: birdName = 'Sparrow'; break;
+        case 2: birdName = 'Pigeon'; break;
+        case 3: birdName = 'Robin'; break;
+        case 4: birdName = 'Eagle'; break;
+        case 5: birdName = 'Falcon'; break;
+        case 6: birdName = 'Hawk'; break;
+        case 7: birdName = 'Owl'; break;
+        case 8: birdName = 'Peacock'; break;
+        case 9: birdName = 'Parrot'; break;
+        case 10: birdName = 'Penguin'; break;
+        default: birdName = `Bird number ${birdNumber}`; break;
     }
 
-    alert(`The polygon with ${numberOfSides} sides is called a ${polygonName}.`);
+    alert(`The bird with number ${birdNumber} is called a ${birdName}.`);
 }
+
+document.getElementById('show-polygon-btn').addEventListener('click', showBird);
 
 function provideInspiration() {
-    alert("Remember: Mindset matters.");
-}
-
-function calculateTax() {
-    const amount = prompt("Enter the amount:");
-    const taxRate = 0.07;
-    const total = amount * (1 + taxRate);
-    alert(`Total amount including tax is: $${total.toFixed(2)}`);
+    alert("Just like a bird in flight, your potential is limitless.");
 }
 
 function provideJoke() {
-    alert("Why did the chicken join a band? Because it had the drumsticks!");
-}
-
-function calculateSum() {
-    const num1 = parseFloat(prompt("Enter the first number:"));
-    const num2 = parseFloat(prompt("Enter the second number:"));
-    const sum = num1 + num2;
-    alert(`The sum is: ${sum}`);
+    alert("Why do birds fly south in the winter? Because it’s faster than walking!");
 }
 
 function provideInsult() {
-    alert("You have the perfect face for radio!");
+    alert("You're like a crow—loud, but no one really listens.");
 }
+document.getElementById('provide-inspiration-btn').addEventListener('click', provideInspiration);
+document.getElementById('provide-joke-btn').addEventListener('click', provideJoke);
+document.getElementById('provide-insult-btn').addEventListener('click', provideInsult);
 
 window.onload = displayCurrentDateTime;
