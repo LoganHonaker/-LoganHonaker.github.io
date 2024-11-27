@@ -16,47 +16,44 @@
     </header>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <main>
-        <h2>First JavaScripts</h2>
-        <h3 id="currentDateTime"></h3>
-        <h2>Welcome!</h2>
+        <h2>Welcome to Luxurious Heron</h2>
+        <h3 id="current-date-time"></h3>
 
-        <form id="userForm">
-            <label for="userName">Enter your name:</label>
-            <input type="text" id="userName" required>
+        <form id="user-form">
+            <label for="user-name">Enter your name:</label>
+            <input type="text" id="user-name" required>
             <br>
-            <label for="userMood">How are you feeling?</label>
-            <input type="text" id="userMood" required>
+            <label for="user-mood">How are you feeling?</label>
+            <input type="text" id="user-mood" required>
             <br>
-            <label for="favoriteNumber">Enter your favorite number (0-10):</label>
-            <input type="number" id="favoriteNumber" min="0" required>
+            <label for="favorite-number">Enter your favorite number (1-10):</label>
+            <input type="number" id="favorite-number" min="1" max="10" required>
             <br>
             <button type="submit">Submit</button>
         </form>
 
-        <h3 id="greetingMessage"></h3>
+        <h3 id="greeting-message"></h3>
 
-        <h3>Polygon Finder</h3>
-        <button onclick="showPolygon()">Find Polygon Name</button>
+        <h3>Bird Finder</h3>
+        <button id="show-polygon-btn">Find Bird Name</button>
 
         <h3>Animal Brand Functions</h3>
-        <button onclick="provideInspiration()">Provide Inspiration</button>
-        <button onclick="calculateTax()">Calculate Tax</button>
-        <button onclick="provideJoke()">Provide a Joke</button>
-        <button onclick="calculateSum()">Calculate Sum</button>
-        <button onclick="provideInsult()">Provide Insult</button>
+        <button id="provide-inspiration-btn">Provide Inspiration</button>
+        <button id="provide-joke-btn">Provide a Joke</button>
+        <button id="provide-insult-btn">Provide Insult</button>
 
         <footer>
             <div data-include="components/footer.html"></div>
-            <a href="#" id="validationLink1">Validation Link 1</a>
-            <a href="#" id="validationLink2">Validation Link 2</a>
+            <a href="#" id="validation-link-1">Validation Link 1</a>
+            <a href="#" id="validation-link-2">Validation Link 2</a>
         </footer>
     </main>
+
     <script src="scripts/include.js"></script>
     <script>
         const currentPageURL = window.location.href;
-        document.getElementById("validationLink1").href += currentPageURL;
-        document.getElementById("validationLink2").href += currentPageURL;
+        document.getElementById("validation-link-1").href += currentPageURL;
+        document.getElementById("validation-link-2").href += currentPageURL;
     </script>
-
 </body>
 </html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tables</title>
+    <link rel="stylesheet" href="styles/scripts.css" type="text/css">
+    <link rel="stylesheet" href="styles/tables.css" type="text/css">
+</head>
+<header>
+    <div data-include="components/header.html"></div>
+    <h1>ITIS3135 - Logan Honaker</h1>
+</header>
+<script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+<body>
+
+    <main>
+        <h2>Activity #2 - HTML Tables - Company</h2>
+
+        <h3>My Tabular Data</h3>
+        <ol>
+            <li>Logan Honaker - lhonake1@charlotte.edu - 26</li>
+            <li>Erin Parker - eparker@hons.co - 16</li>
+            <li>Austin Schumacher - aschuma@hons.co - 22</li>
+            <li>Ryan Sellers - rsellers@hons.co - 24</li>
+            <li>Amber Shell - ashell@hons.co - 13</li>
+            <li>Derek Raxter - draxter@hons.co - 10</li>
+            <li>Bailey Gunter - bgunter@hons.co - 14</li>
+        </ol>
+
+        <h3>Employee Data in Simple Table</h3>
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Years of Service</th>
+            </tr>
+            <tr>
+                <td>Logan Honaker</td>
+                <td>lhonake1@charlotte.edu</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td>Erin Parker</td>
+                <td>eparker@hons.co</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>Austin Schumacher</td>
+                <td>aschuma@hons.co</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>Ryan Sellers</td>
+                <td>rsellers@hons.co</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>Amber Shell</td>
+                <td>ashell@hons.co</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>Derek Raxter</td>
+                <td>draxter@hons.co</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Bailey Gunter</td>
+                <td>bgunter@hons.co</td>
+                <td>14</td>
+            </tr>
+        </table>
+
+        <figure>
+            <figcaption>Employee Information</figcaption>
+            <h3>Employee Data in Complex Table</h3>
+            <table border="1">
+                <tr>
+                    <th>Category</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Years of Service</th>
+                    <th>Monthly Salary</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">Marketing</td>
+                    <td id="name1">Logan Honaker</td>
+                    <td headers="name1">lhonake1@charlotte.edu</td>
+                    <td headers="name1">26</td>
+                    <td headers="name1">$5,500</td>
+                </tr>
+                <tr>
+                    <td id="name2">Erin Parker</td>
+                    <td headers="name2">eparker@hons.co</td>
+                    <td headers="name2">16</td>
+                    <td headers="name2">$4,800</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">Sales</td>
+                    <td id="name3">Austin Schumacher</td>
+                    <td headers="name3">aschuma@hons.co</td>
+                    <td headers="name3">22</td>
+                    <td headers="name3">$4,900</td>
+                </tr>
+                <tr>
+                    <td id="name4">Ryan Sellers</td>
+                    <td headers="name4">rsellers@hons.co</td>
+                    <td headers="name4">24</td>
+                    <td headers="name4">$5,300</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="3">IT</td>
+                    <td id="name5">Amber Shell</td>
+                    <td headers="name5">ashell@hons.co</td>
+                    <td headers="name5">13</td>
+                    <td headers="name5">$4,600</td>
+                </tr>
+                <tr>
+                    <td id="name6">Derek Raxter</td>
+                    <td headers="name6">draxter@hons.co</td>
+                    <td headers="name6">10</td>
+                    <td headers="name6">$4,200</td>
+                </tr>
+                <tr>
+                    <td id="name7">Bailey Gunter</td>
+                    <td headers="name7">bgunter@hons.co</td>
+                    <td headers="name7">14</td>
+                    <td headers="name7">$4,400</td>
+                </tr>
+
+                <tr>
+                    <th colspan="3">Total Years of Service</th>
+                    <td>125</td>
+                    <td>$33,700</td>
+                </tr>
+            </table>
+        </figure>
+    </main>
+
+    <footer>
+            <div data-include="components/footer.html"></div>
+        <p>
+            Page Built by: <a href="https://webpages.charlotte.edu/lhonake1/itis3135/hedging/hedging.html" target="_blank">Hons' Hedging ©2024</a>
+        </p>
+    </footer>
+    <script src="scripts/include.js"></script>
+</body>
+
+</html>

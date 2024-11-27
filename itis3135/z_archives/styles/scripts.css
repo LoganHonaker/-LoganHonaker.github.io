@@ -7,13 +7,18 @@ header {
     font-size: 25px;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
 }
 header, body {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 body {
+    text-align: left;
     font-size: 18px;
+}
+table {
+    text-align: center;
 }
 main {
     max-width: 1200px;
@@ -36,8 +41,19 @@ footer {
     text-align: center;
     position: fixed;
     bottom: 0;
-    width: 100%;;
+    width: 100%;
 }
+.hidden {
+    display: none;
+}
+#byo-intro-body main {
+    text-align: left;
+}
+#byo-intro header,
+#byo-intro footer {
+    text-align: center;
+}
+
 /* Mobile */
 @media (max-width: 600px) {
     body {
@@ -79,3 +95,4 @@ footer {
         height: 200px;
     }
 }
+
